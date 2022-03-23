@@ -1,12 +1,15 @@
 
 import './App.css';
+import TestCard from './Components';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
     <div className="App">
-    <h1>HI Friends !!!</h1>
+      <TestCard />
     </div>
-  );
+  )
 }
 
 export default App;

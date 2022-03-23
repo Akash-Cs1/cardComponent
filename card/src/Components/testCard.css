@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mainbx {
+  height: 570px;
+  background:black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.cardBox{
+
+height: 408px;
+width: 334px;;
+border-radius: 28px;
+font-weight: 400;
+font-family: system-ui;
+word-wrap: break-word;
+
+
+
+background-color: hsl(216, 12%, 8%);
+
+
+}
+.imageContainer{
+  margin-top: 31px;
+  margin-left: 20px;
+  background-color:  hsl(213, 19%, 18%);
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
+  padding-left: 10px;
+  padding-top: 9px !important;
+}
+.textContent {
+  line-height: 27px;
+  text-align: justify;
+  padding-left: 19px;
+  padding-right: 19px;
+  text-justify: inter-word;
+  margin-top: 17px;
+}
+
+.page {
+  position: relative;
+  display: flex;
+  word-wrap: break-word;
+  margin-top: 25px;
+  column-gap: 16px;
+  padding-left: 19px;
+  margin-bottom: 31px;
+
+}
+
+button.submiteButton {
+  background: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%); 
+  border-radius: 15px;
+  width: 268px;
+  height: 37px;
+  margin-left: 19px;
+ 
+}
+
+p.text2 {
+  font-weight: 400;
+  margin-top: 28px;
+}
+.pageNumbers {
+  background: hsl(213, 19%, 18%);
+  height: 36px;
+  width: 38px;
+  border-radius: 18px;
+  padding-left: 16px;
+  padding-top: 6px;
+}
+
+.pageNumbers:hover{
+    background: hsl(25, 97%, 53%);
+
+}
+button.submiteButton:hover{
+    background:hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
