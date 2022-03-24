@@ -87,3 +87,8 @@ button.submiteButton:hover{
     background:hsl(0, 0%, 100%);
     color: hsl(25, 97%, 53%);
 }
+.active {
+  background: hsl(217, 12%, 63%);
+}
+ 
+ 

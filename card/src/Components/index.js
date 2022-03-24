@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react';
 import "./testCard.css"
 
-const handleClick=(e)=>{
-    console.log("this is working fine");
-    e.preventDefault();
-    e.target.style.color = 'black'
-    console.log(e.target);
-}
+
+
+
+
 
 function TestCard() {
+  const [count, setCount] = useState(false);
+  const pageNumber =[1,2,3,4,5];
+
+ 
+  
   return (
     <div className="mainbx bg-black text-white h-1/5">
       <div className="cardBox">
@@ -22,13 +25,11 @@ function TestCard() {
             <h3 className='text1'>How did we do?</h3>
             <p className="text2">please let us know how we did with your support request. All fedbacks are Appreciated to help us improve our offsprings ! </p>
           </div>
-          <div className="page">
-            <div className="pageNumbers">1</div>
-            <div className="pageNumbers">2</div>
-            <div className="pageNumbers">3</div>
-            <div className="pageNumbers">4</div>
-            <div className="pageNumbers">5</div>
-          </div>
+          <div className="page"> {
+            pageNumber.map((item)=>{
+              return (<div key={item} className = {`pageNumbers ${count === item ?"active": ""} `} onClick={()=>setCount(item)}>{item}</div>);
+            })
+          }</div>
           <div className="submitButton">
             <button className='submiteButton'>Submite</button>
           </div>
@@ -39,4 +40,5 @@ function TestCard() {
   )
 }
 
-export default TestCard
+export default TestCard;
+
