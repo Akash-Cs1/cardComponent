@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mainbx {
+  height: 570px;
+  background: hsl(216, 12%, 8%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardBox {
+  height: 408px;
+  width: 334px;
+  border-radius: 28px;
+  font-weight: 400;
+  font-family: system-ui;
+  word-wrap: break-word;
+
+  background-color: hsl(216, 12%, 8%);
+}
+.textContent {
+  line-height: 27px;
+  text-align: center;
+  padding-left: 19px;
+  padding-right: 19px;
+  text-justify: inter-word;
+  margin-top: 17px;
+}
+
+button.submiteButton {
+  background: hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+  border-radius: 23px;
+  width: 189px;
+  height: 37px;
+  margin-left: 59px;
+  margin-top: 28px;
+}
+
+p.text2 {
+  font-weight: 200;
+  margin-top: 16px;
+}
+
+button.submiteButton:hover {
+  background: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+.png {
+    margin-left: 55px;
+    margin-top: 53px;
+}
+
+p.text1{
+    margin-top: 34px;
+}
