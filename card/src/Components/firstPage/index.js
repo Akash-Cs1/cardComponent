@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import "./testCard.css";
 import { useNavigate } from 'react-router-dom';
 
-function SucessCard() {
+function SucessCard(props) {
   const [count, setCount] = useState(false);
   const pageNumber = [1, 2, 3, 4, 5];
   const navigate = useNavigate();
+  const handle = (item)=>{
+    setCount(item);
+    props.setRating(item);
+  }
 
   return (
     <div className="mainbx bg-black text-white h-1/5">
@@ -35,7 +39,7 @@ function SucessCard() {
                 <div
                   key={item}
                   className={`pageNumbers ${count === item ? "active" : ""} `}
-                  onClick={() => setCount(item)}
+                  onClick={() => {handle(item)}}
                 >
                   {item}
                 </div>

@@ -1,6 +1,6 @@
 import "./secondePage.css";
 
-function SucessCard() {
+function SucessCard(props) {
   return (
     <div className="mainbx bg-black text-white h-1/5">
       <div className="cardBox">
@@ -100,7 +100,7 @@ function SucessCard() {
           </div>
 
           <div className="dummy">
-            <button className="dummy">You selected 4 out of 5</button>
+            <button className="dummy">You selected 4 out of {props.rating}</button>
           </div>
           <div className="textContent">
             <h3 className="text1">Thank You!</h3>
