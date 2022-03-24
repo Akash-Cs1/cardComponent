@@ -4,7 +4,7 @@
 
 .mainbx {
   height: 570px;
-  background:black;
+  background:hsl(216, 12%, 8%);
   display: flex;
   align-items: center;
   justify-content: center;
