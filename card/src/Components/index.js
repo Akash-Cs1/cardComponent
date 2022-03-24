@@ -1,6 +1,13 @@
 import React from 'react'
 import "./testCard.css"
 
+const handleClick=(e)=>{
+    console.log("this is working fine");
+    e.preventDefault();
+    e.target.style.color = 'black'
+    console.log(e.target);
+}
+
 function TestCard() {
   return (
     <div className="mainbx bg-black text-white h-1/5">
