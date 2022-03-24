@@ -17,7 +17,7 @@ function App() {
        
           <Routes>
            
-            <Route path="/seconde" element={<SucessCard rating = {rating}/>} />{" "}
+            <Route path="/second" element={<SucessCard rating = {rating}/>} />{" "}
             <Route exact path="/" element={<TestCard  setRating = {setRating}/>} />{" "}
           </Routes>{" "}
         

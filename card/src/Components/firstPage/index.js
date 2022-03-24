@@ -29,7 +29,7 @@ function SucessCard(props) {
             <h3 className="text1">How did we do?</h3>
             <p className="text2">
               please let us know how we did with your support request. All
-              fedbacks are Appreciated to help us improve our offsprings !{" "}
+              feedbacks are Appreciated to help us improve our offsprings !{" "}
             </p>
           </div>
           <div className="page">
@@ -47,7 +47,7 @@ function SucessCard(props) {
             })}
           </div>
           <div className="submitButton">
-            <button className="submiteButton" onClick={() => {navigate('/seconde')}}>Submite</button>
+            <button className="submiteButton" onClick={() => {navigate('/second')}}>Submit</button>
           </div>
         </div>
       </div>

@@ -1,6 +1,10 @@
 import "./secondePage.css";
+import { useNavigate } from 'react-router-dom';
+
+
 
 function SucessCard(props) {
+  const navigate = useNavigate();
   return (
     <div className="mainbx bg-black text-white h-1/5">
       <div className="cardBox">
@@ -100,7 +104,7 @@ function SucessCard(props) {
           </div>
 
           <div className="dummy">
-            <button className="dummy">You selected 4 out of {props.rating}</button>
+            <button className="dummy" onClick={() => {navigate('/')}}>You selected {props.rating} out of 5 </button>
           </div>
           <div className="textContent">
             <h3 className="text1">Thank You!</h3>
