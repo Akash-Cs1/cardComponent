@@ -99,8 +99,8 @@ function SucessCard() {
             </span>
           </div>
 
-          <div className="submitButton">
-            <button className="submiteButton">You selected 4 out of 5</button>
+          <div className="dummy">
+            <button className="dummy">You selected 4 out of 5</button>
           </div>
           <div className="textContent">
             <h3 className="text1">Thank You!</h3>

@@ -14,8 +14,8 @@ function App() {
        
           <Routes>
            
-            <Route path="/" element={<SucessCard />} />{" "}
-            <Route exact path="/first" element={<TestCard />} />{" "}
+            <Route path="/seconde" element={<SucessCard />} />{" "}
+            <Route exact path="/" element={<TestCard />} />{" "}
           </Routes>{" "}
         
       </BrowserRouter>{" "}

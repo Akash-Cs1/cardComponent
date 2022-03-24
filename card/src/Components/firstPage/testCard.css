@@ -56,11 +56,13 @@ button.submiteButton {
   width: 268px;
   height: 37px;
   margin-left: 19px;
+  
 }
 
 p.text2 {
   font-weight: 200;
   margin-top: 28px;
+  opacity: 0.5;
 }
 .pageNumbers {
   background: hsl(213, 19%, 18%);
@@ -69,6 +71,7 @@ p.text2 {
   border-radius: 18px;
   padding-left: 16px;
   padding-top: 6px;
+  opacity: 0.5;
 }
 
 .pageNumbers:hover {

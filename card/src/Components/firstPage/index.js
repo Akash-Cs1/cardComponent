@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./testCard.css";
-
+import { useNavigate } from 'react-router-dom';
 
 function SucessCard() {
   const [count, setCount] = useState(false);
   const pageNumber = [1, 2, 3, 4, 5];
+  const navigate = useNavigate();
 
   return (
     <div className="mainbx bg-black text-white h-1/5">
@@ -42,7 +43,7 @@ function SucessCard() {
             })}
           </div>
           <div className="submitButton">
-            <button className="submiteButton">Submite</button>
+            <button className="submiteButton" onClick={() => {navigate('/seconde')}}>Submite</button>
           </div>
         </div>
       </div>
